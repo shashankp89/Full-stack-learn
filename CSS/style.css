@@ -1,0 +1,53 @@
+/* basic css format */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+h1{
+    color: red;
+}
+p{
+    color: white;
+    background-color: black;
+}
+button{
+    color: white;
+    /* color: rgb(255, 255, 255)  rgb system */
+    /* color: #ffffff; hexadecimal system */
+    /* color: hsl(0, 100%, 50%); hsl system */
+
+    background-color:blue;
+}
+hr{
+     
+    border-color:chartreuse;
+}
+
+h2{
+    color: orange;
+}
+
+/* text properties */
+p{
+    font-family: Arial, sans-serif; 
+    font-size: 16px; /* rem, vh, vw, percentage, */
+    font-weight: bold; /* normal, bold, bolder, lighter, 100-900 */
+    text-align: center; /* left, right, center, justify */
+    text-decoration:  wavy underline; /* none, underline, overline, line-through */
+    line-height: 1.5; /* normal, number, length, percentage */
+    letter-spacing: 2px; /* normal, length, percentage */
+}
+
+h1{
+    color: #ffa511;
+    font-family: league Spartan;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: teal double underline;
+    text-transform: uppercase; /* capitalize, lowercase, uppercase */
+}
