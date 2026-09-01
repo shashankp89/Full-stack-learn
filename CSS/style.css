@@ -109,3 +109,31 @@ div{
     border: 5px solid red; /* space between border and margin  */
     margin: 20px; /* space between element and other elements */
 }
+
+/* display properties: block, inline, inline-block, none, flex, grid */
+div{
+    display: block; /* default value */
+}
+div{
+    display: inline; /* takes up only as much width as necessary */
+}
+div{
+    display: inline-block; /* takes up only as much width as necessary but allows for setting width and height */
+}
+div{
+    display: none; /* hides the element */
+}
+div{
+    margin: 10px;
+    display: flex; /* allows for flexible layout */
+    justify-content: center; /* aligns items horizontally */
+    align-items: center; /* aligns items vertically */
+}
+
+/* relative units: em, rem, vh, vw, % */
+div{
+    width: 50%; /* 50% of the parent element's width */
+    height: 50vh; /* 50% of the viewport height */
+    font-size: 2rem; /* 2 times the root element's font size */
+    padding: 1em; /* 1 times the element's font size */
+}
