@@ -51,3 +51,61 @@ h1{
     text-decoration: teal double underline;
     text-transform: uppercase; /* capitalize, lowercase, uppercase */
 }
+
+/* descendnt selector: applies to all descendants */
+div p{
+    background-color: red;
+}
+
+/* child combinator : applies to direct children only */ 
+div > p{
+    background-color: blue;
+}
+
+/* adjacent sibling combinator: applies to the next sibling only */
+div + p{
+    background-color: green;
+}
+
+/* attribute selector: applies to elements with specific attributes */
+input[type="text"]{
+    border: 1px solid red;
+    padding: 5px;
+}
+
+/* pseudo-class selector: applies to elements in a specific state */
+button:hover{
+    color: red;
+}
+button:active{
+    color: blue;
+}
+button:focus /* focused means clicked or selected */{
+    color: green;
+}
+
+/* pseudo-element selector: applies to specific parts of an element */ 
+p::first-line{
+    color: red;
+}
+p::first-letter{
+    color: blue;
+}
+
+/* cascading is the process of determining which CSS rules apply to an element */
+/* cascading order: inline > internal > external */
+/* specifity is the measure of how specific a CSS selector is */
+/* specificity: inline > id > class > element */
+
+
+
+
+/* boxmodel properties: content, padding, border, margin */
+
+div{
+    width: 200px; /*applies to content area only*/
+    height: 200px; /*applies to content area only*/
+    padding: 20px; /* space between content and border */
+    border: 5px solid red; /* space between border and margin  */
+    margin: 20px; /* space between element and other elements */
+}

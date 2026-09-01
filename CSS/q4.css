@@ -1,0 +1,10 @@
+div{
+    background-color: yellow;
+}
+p{
+    color:blueviolet;
+}
+
+#myid p{
+    color: green;
+}
