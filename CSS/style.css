@@ -195,3 +195,26 @@ div{
     left: 10px; /* moves the element 10px right */
     z-index: 1; /* sets the stack order of the element */
 }
+
+/*flexbox properties: display: flex, flex-direction, justify-content, align-items, flex-wrap, flex-grow, flex-shrink, flex-basis */
+.container{
+    background-color: lightgray;
+    display: flex; /* enables flexbox layout */
+    flex-direction: row; /* arranges items in a row */
+    justify-content: space-between; /* distributes items evenly with space between them */
+    align-items: center; /* aligns items vertically in the center */
+    align-content: center; /* aligns the flex lines in the center */
+    align-self: center; /* aligns the item itself in the center */
+    flex-wrap: wrap; /* allows items to wrap onto multiple lines */
+}
+
+/*flex sizing properties: flex-grow, flex-shrink, flex-basis */
+.item{
+    background-color: lightblue;
+    flex-grow: 1; /* allows the item to grow and fill available space */
+    flex-shrink: 1; /* allows the item to shrink if necessary */
+    flex-basis: 200px; /* sets the initial size of the item */
+    margin: 10px; /* adds space around the item */
+    padding: 20px; /* adds space inside the item */
+    text-align: center; /* centers the text inside the item */
+}
