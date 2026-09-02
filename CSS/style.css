@@ -132,8 +132,66 @@ div{
 
 /* relative units: em, rem, vh, vw, % */
 div{
-    width: 50%; /* 50% of the parent element's width */
-    height: 50vh; /* 50% of the viewport height */
+    width: 15%; /* 15% of the parent element's width */
+    height: 15vh; /* 15% of the viewport height */
     font-size: 2rem; /* 2 times the root element's font size */
     padding: 1em; /* 1 times the element's font size */
+}
+
+/* alpha and opacity properties: rgba, hsla, opacity */
+div{
+    background-color: rgba(255, 0, 0, 0.5); /* red with 50% opacity */
+    color: hsla(120, 100%, 50%, 0.5); /* green with 50% opacity */
+    opacity: 0.5; /* makes the entire element 50% opaque */
+}
+
+/* transitions in css: transition-property, transition-duration, transition-timing-function, transition-delay */
+div{
+    transition-property: all; /* which properties to transition */
+    transition-duration: 0.5s; /* how long the transition takes */
+    transition-timing-function: ease-in-out; /* how the transition progresses */
+    transition-delay: 0s; /* delay before the transition starts */
+}
+
+div:hover{
+    background-color: blue; /* changes background color on hover */
+    color: white; /* changes text color on hover */
+}
+
+/* css transform properties: transform, translate, rotate, scale, skew */
+
+div{
+    transform: translate(50px, 50px); /* moves the element 50px right and 50px down */
+    transform: rotate(45deg); /* rotates the element 45 degrees clockwise */
+    transform: scale(1.5); /* scales the element to 1.5 times its original size */
+    transform: scale(2,1); /* scales the element to 2 times its original width and 1 times its original height */
+    transform: skew(20deg, 10deg); /* skews the element by 20 degrees horizontally and 10 degrees vertically */
+
+
+    /*shorthand*/ transform: translate(50px, 50px) rotate(45deg) scale(1.5) skew(20deg, 10deg); /* combines all transforms into one line */
+}
+/*box shadow: applies shadow to the element's box */
+div{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /* horizontal offset, vertical offset, blur radius, spread radius, color */
+}
+
+/*background images: background-image, background-repeat, background-position, background-size, background-attachment */
+#image{
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg'); /* sets the background image */
+     
+    background-position: center; /* centers the image */
+    background-size: auto; /* stretches the image to fit the element */
+    background-size: cover; /* stretches the image to cover the entire element */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-attachment: fixed; /* makes the background image fixed in place */
+}
+
+/*position properties: position, top, right, bottom, left, z-index */
+div{
+    position: relative; /* positions the element relative to its normal position */
+    top: 10px; /* moves the element 10px down */
+    left: 10px; /* moves the element 10px right */
+    z-index: 1; /* sets the stack order of the element */
 }
