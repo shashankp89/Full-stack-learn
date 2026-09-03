@@ -299,3 +299,12 @@ div{
         background-color: lightgreen; /* changes background color for landscape orientation */
     }
 }
+/* z-index: controls the stacking order of elements */
+.container{
+    position: relative; /* positions the element relative to its normal position */
+    z-index: 1; /* sets the stack order of the element */
+}  
+.grid-container{
+    position: relative; /* positions the element relative to its normal position */
+    z-index: 2; /* sets the stack order of the element , higher z index means it will be displayed on top */
+} 
