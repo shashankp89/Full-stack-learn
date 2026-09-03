@@ -218,3 +218,84 @@ div{
     padding: 20px; /* adds space inside the item */
     text-align: center; /* centers the text inside the item */
 }
+
+/*CSS Grid properties: display: grid, grid-template-columns, grid-template-rows, grid-gap, grid-column, grid-row */
+.grid-container{
+    display: grid; /* enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* creates 3 equal columns */
+    grid-template-rows: repeat(2, 200px); /* creates 2 rows of 200px height */
+    grid-gap: 10px; /* adds space between grid items */
+}
+
+/*grid-column properties: grid-column-start, grid-column-end, grid-column-span*/
+.grid-item{
+    background-color: lightgreen;
+    grid-column: 1 / 3; /* spans from column 1 to column 3 */
+    grid-row: 1 / 2; /* spans from row 1 to row 2 */
+    text-align: center; /* centers the text inside the item */
+    padding: 20px; /* adds space inside the item */
+}
+
+/*grid-row properties: grid-row-start, grid-row-end, grid-row-span*/
+.grid-item-2{
+    background-color: lightcoral;
+    grid-column: 2 / 4; /* spans from column 2 to column 4 */
+    grid-row: 2 / 3; /* spans from row 2 to row 3 */
+    text-align: center; /* centers the text inside the item */
+    padding: 20px; /* adds space inside the item */
+}
+
+/* grid properties: justify-items, align-items, justify-content, align-content */
+.grid-container-2{
+    display: grid; /* enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* creates 3 equal columns */
+    grid-template-rows: repeat(2, 200px); /* creates 2 rows of 200px height */
+    grid-gap: 10px; /* adds space between grid items */
+    justify-items: center; /* centers items horizontally within their grid area */
+    align-items: center; /* centers items vertically within their grid area */
+    justify-content: center; /* centers the entire grid horizontally within the container */
+    align-content: center; /* centers the entire grid vertically within the container */
+    align-self: center; /* centers the item itself within its grid area */
+    place-items: center; /* shorthand for justify-items and align-items */
+
+}
+
+/* css animations: @keyframes, animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode */
+@keyframes example {
+    0%   {background-color: red; left: 0px; top: 0px;} /* starting position */
+    25%  {background-color: yellow; left: 200px; top: 0px;} /* moves to the right */
+    50%  {background-color: blue; left: 200px; top: 200px;} /* moves down */
+    75%  {background-color: green; left: 0px; top: 200px;} /* moves to the left */
+    100% {background-color: red; left: 0px; top: 0px;} /* returns to the starting position */
+}
+
+.container{
+    width: 100px;
+    height: 100px;
+    position: relative; /* allows the element to be positioned relative to its normal position */
+    animation-name: example; /* specifies the name of the animation */
+    animation-duration: 4s; /* specifies how long the animation takes to complete */
+    animation-timing-function: linear; /* specifies the speed curve of the animation */
+    animation-delay: 0s; /* specifies a delay before the animation starts */
+    animation-iteration-count: infinite; /* specifies how many times the animation should repeat */
+    animation-direction: alternate; /* specifies whether the animation should play forwards, backwards, or alternate */
+    animation-fill-mode: forwards; /* specifies how a CSS animation should apply styles to its target before and after it is executing */
+}
+
+/* media queries: @media, min-width, max-width, orientation */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue; /* changes background color for screens smaller than 600px */
+    }
+    .container {
+        flex-direction: column; /* stacks items vertically for smaller screens */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* changes grid to a single column for smaller screens */
+    }
+}
+@media (orientation: landscape) {
+    body {
+        background-color: lightgreen; /* changes background color for landscape orientation */
+    }
+}
