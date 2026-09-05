@@ -308,3 +308,4 @@ div{
     position: relative; /* positions the element relative to its normal position */
     z-index: 2; /* sets the stack order of the element , higher z index means it will be displayed on top */
 } 
+

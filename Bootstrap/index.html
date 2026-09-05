@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Various buttons using bootstrap -->
+    <!-- These are all bootstrap classes -->
+    <button class="btn btn-primary">Primary Button</button>
+    <!-- it is a primary button -->
+    <button class="btn btn-secondary">Secondary Button</button>
+    <!-- it is a secondary button -->
+    <button class="btn btn-success disabled">Success Button</button>
+    <!-- it is a success button disabled -->
+    <button class="btn btn-outline-danger">Danger Button</button>
+    <!-- it is a danger outline button -->
+    <button class="btn btn-warning btn-lg">Warning Button</button>
+    <!-- it is a large warning button -->
+    <button class="btn btn-info">Info Button</button>
+    <!-- it is an info button -->
+    <button class="btn btn-light">Light Button</button>
+    <!-- it is a light button -->
+    <button class="btn btn-outline-dark">Dark Button</button>
+    <!-- it is a dark outline button -->
+
+    <!-- Container(Layout) using bootstrap -->
+    <div class="container">
+      <h1>Welcome to Bootstrap</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa
+        aliquam, quo inventore omnis magnam! Impedit iusto, sed voluptatibus
+        facere eaque sunt doloribus sapiente nulla facilis, eius nemo, inventore
+        blanditiis! Nemo id beatae, iste officia veritatis explicabo
+        consequatur, consequuntur accusamus, eum dolor reprehenderit? Totam
+        praesentium voluptas ipsam obcaecati expedita consectetur.
+      </p>
+    </div>
+
+    <!-- Badges using bootstrap -->
+    <span class="badge bg-primary">Primary</span>
+    <!-- it is a primary badge -->
+    <span class="badge bg-secondary">Secondary</span>
+    <!-- it is a secondary badge -->
+    <span class="badge bg-success">Success</span>
+    <!-- it is a success badge -->
+    <span class="badge bg-danger">Danger</span>
+    <!-- it is a danger badge -->
+    <span class="badge bg-warning">Warning</span>
+    <!-- it is a warning badge -->
+    <span class="badge bg-info">Info</span>
+    <!-- it is an info badge -->
+    <span class="badge bg-light">Light</span>
+    <!-- it is a light badge -->
+    <span class="badge bg-dark">Dark</span>
+    <!-- it is a dark badge -->
+
+    <!-- badge inside button  -->
+    <button class="btn btn-primary">
+      Notifications <span class="badge bg-secondary">4</span>
+      <!-- it is a badge inside button -->
+    </button>
+
+    <!-- positioned badge inside button -->
+    <button class="btn btn-primary position-relative">
+      Inbox
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      >
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+
+    <!-- alert using bootstrap -->
+    <div class="alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>
+    <!-- live demo of alert using bootstrap with working dismiss button -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- button group using bootstrap -->
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary">Left</button>
+      <button type="button" class="btn btn-primary">Middle</button>
+      <button type="button" class="btn btn-primary">Right</button>
+    </div>
+
+    <!-- various navabars using bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+           <!-- searchbox in navbar using bootstrap -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          
+        </ul>
+      </div>
+    </nav>
+
+
+    like this bootstrap is a very useful framework for building responsive and mobile-first websites. It provides a wide range of pre-designed components, such as buttons, forms, navbars, alerts, and more, which can be easily customized to fit the needs of your project. By using Bootstrap's grid system and utility classes, you can create layouts that adapt to different screen sizes and devices. Additionally, Bootstrap's JavaScript plugins allow you to add interactive elements like modals, carousels, and dropdowns without having to write complex code from scratch. Overall, Bootstrap simplifies the web development process and helps developers create visually appealing and functional websites quickly. So we can visit bootstrap website to look for our required elements and use them in our project. It is a great tool for both beginners and experienced developers to enhance their web development skills and create professional-looking websites efficiently.
+  </body>
+</html>
